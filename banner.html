@@ -8,6 +8,7 @@
             rel="stylesheet">
         <title>Atera Design</title>
         <style>
+
             body {
                 background-color: #EDEDED;
                 font-size: 30px;
@@ -15,28 +16,48 @@
             .main_section {
                 background-color: #E3DBD9;
             }
+
             img {
                 width: 100px;
             }
 
-            /* .button-wrapper .btn {
-    font-size: 24px;   
-    padding: 15px 40px; 
-    margin: 10px 0;   
-    border-radius: 8px; 
-    border-width: 2px; 
-} */
+            .button-wrapper .btn {
+                font-size: 24px;
+                padding: 12px 30px;
+                border-radius: 25px;
+            }
+
+            .button-wrapper .btn:hover {
+                transform: scale(0.98);
+            }
 
             .button-wrapper a:first-child {
                 background-color: #FF176B;
                 color: #FFFFFF;
             }
-            .button-wrapper a:nth-child(3) {
+
+            .button-wrapper a:last-child {
                 background-color: #1A1A1A;
                 color: #FFFFFF;
             }
 
-      
+           
+
+           
+
+            .button-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            @media (min-width: 768px) {
+                .button-wrapper {
+                    flex-direction: row; 
+                }
+                
+            }
         </style>
     </head>
     <body>
@@ -44,7 +65,6 @@
         <div class="container-fluid py-5" style="background-color: #EDEDED;">
             <div class="row">
                 <div class="col-lg-12 text-center" style="background-color: #E3DBD9;">
-                    
                     <div class="row mb-5">
                         <div class="col-3 col-md col-lg mb-3">
                             <img src="box.svg" class="img-fluid mx-auto d-block" alt="Description">
@@ -72,24 +92,24 @@
                         </div>
 
                     </div>
-        
                     <h1 class="mb-4 display-2 fw-bolder display-lg-4 ">
                         <strong class="font-weight-bold">Ready to take IT</strong><br>
                         <strong class="font-weight-bold">to the next level?</strong>
                     </h1>
                     <p class="fs-4 mb-4 display-5">Explore all our features, free for 30 days.</p>
-        
-                    <div class="button-wrapper text-center container">
-                        <a href="https://www.atera.com" class="btn w-100 mb-3">Start free trial</a>
-                        
-                        <p class="fw-lighter fs-5 mb-3">No credit card required</p>
-        
-                        <a href="https://www.atera.com" class="btn w-100">Book a demo</a>
+                    <div>
+                        <div class="button-wrapper text-center container">
+                            <a href="https://www.atera.com" id="btn" class="btn w-100 mb-3 w-30-desk">Start free trial</a>
+                            <p class="fw-lighter fs-5 d-block d-sm-none" style="color:#54575c">No credit card required</p>
+
+                            <a href="https://www.atera.com" id="btn" class="btn w-100 w-30-desk">Book a demo</a> 
+
+
+                        </div>
+
                     </div>
-        
                 </div>
             </div>
-        </div>
 
-    </body>
-</html>
+        </body>
+    </html>
