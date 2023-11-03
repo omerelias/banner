@@ -36,7 +36,7 @@
                 color: #FFFFFF;
             }
 
-            .button-wrapper a:last-child {
+            .button-wrapper a:nth-child(3) {
                 background-color: #1A1A1A;
                 color: #FFFFFF;
             }
@@ -49,7 +49,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
             }
 
             @media (min-width: 768px) {
@@ -98,11 +97,12 @@
                     </h1>
                     <p class="fs-4 mb-4 display-5">Explore all our features, free for 30 days.</p>
                     <div>
-                        <div class="button-wrapper text-center container">
-                            <a href="https://www.atera.com" id="btn" class="btn w-100 mb-3 w-30-desk">Start free trial</a>
-                            <p class="fw-lighter fs-5 d-block d-sm-none" style="color:#54575c">No credit card required</p>
+                        <div class="button-wrapper text-center container row my-4">
+                            <a href="https://www.atera.com" id="btn" class="btn col-md-4 offset-md-2 col-lg-3 offset-lg-5">Start free trial</a>
+                            <p class="fw-lighter d-block d-sm-none fs-5" style="color:#54575c">No credit card required</p>
 
-                            <a href="https://www.atera.com" id="btn" class="btn w-100 w-30-desk">Book a demo</a> 
+                            <a href="https://www.atera.com" id="btn" class="btn col-md-4 offset-md-1 col-lg-3">Book a demo</a> 
+                            <p class="fw-lighter text-center d-none d-sm-block fs-5 col-md-4 offset-md-2 col-lg-3 offset-lg-5 my-lg-2" style="color:#54575c">No credit card required</p>
 
 
                         </div>
