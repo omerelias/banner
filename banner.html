@@ -8,13 +8,39 @@
             rel="stylesheet">
         <title>Atera Design</title>
         <style>
-
             body {
                 background-color: #EDEDED;
                 font-size: 30px;
             }
+
             .main_section {
                 background-color: #E3DBD9;
+            }
+
+            .container-fluid {
+                background-image: url("small-left.png");
+                background-size: auto;
+                background-repeat: no-repeat;
+            }
+
+            /* Medium screens */
+            @media (min-width: 768px) {
+                .container-fluid {
+                    background-image: url("medium-left.png");
+                }
+            }
+
+            /* Large screens */
+            @media (min-width: 992px) {
+                .container-fluid {
+                    background-image: url("large-left.png");
+                }
+            }
+            /* XLarge screens */
+            @media (min-width: 1200px) {
+                .container-fluid {
+                    background-image: url("xl-left.png");
+                }
             }
 
             img {
@@ -41,75 +67,102 @@
                 color: #FFFFFF;
             }
 
-           
-
-           
-
-            .button-wrapper {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .badge-wrapper {
+                position: relative;
             }
 
-            @media (min-width: 768px) {
-                .button-wrapper {
-                    flex-direction: row; 
+             /* Large screens */
+             @media (max-width: 768) {
+                .container-fluid {
+                    background-image: url("large-left.png");
                 }
-                
+            }
+            .badge {
+                position: absolute;
+                top: -50%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 10;
+                width: 95%;
+                padding: 15px;
+                margin-top: 0;
             }
         </style>
     </head>
     <body>
+        <div class="main_content">
+            <div class="row mt-lg-3 mb-lg-4 mb-5 g-3">
 
-        <div class="container-fluid py-5" style="background-color: #EDEDED;">
-            <div class="row">
-                <div class="col-lg-12 text-center" style="background-color: #E3DBD9;">
-                    <div class="row mb-5">
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box-1.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box-2.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box-3.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box-4.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box-5.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box-6.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-                        <div class="col-3 col-md col-lg mb-3">
-                            <img src="box-7.svg" class="img-fluid mx-auto d-block" alt="Description">
-                        </div>
-
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper">
+                    <div class="badge">
+                        <img src="box.svg" class="img-fluid mx-auto d-block p" >
                     </div>
-                    <h1 class="mb-4 display-2 fw-bolder display-lg-4 ">
-                        <strong class="font-weight-bold">Ready to take IT</strong><br>
-                        <strong class="font-weight-bold">to the next level?</strong>
-                    </h1>
-                    <p class="fs-4 mb-4 display-5">Explore all our features, free for 30 days.</p>
-                    <div>
+                </div>
+
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper">
+                    <div class="badge">
+                        <img src="box-1.svg" class="img-fluid mx-auto d-block p" >
+                    </div>
+                </div>
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper">
+                    <div class="badge">
+                        <img src="box-2.svg" class="img-fluid mx-auto d-block p">
+                    </div>
+                </div>
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper">
+                    <div class="badge">
+                        <img src="box-3.svg" class="img-fluid mx-auto d-block p" >
+                    </div>
+                </div>
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper second_line_badges">
+                    <div class="badge">
+                        <img src="box-4.svg" class="img-fluid mx-auto d-block p">
+                    </div>
+                </div>
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper second_line_badges">
+                    <div class="badge">
+                        <img src="box-5.svg" class="img-fluid mx-auto d-block p">
+                    </div>
+                </div>
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper second_line_badges">
+                    <div class="badge">
+                        <img src="box.svg" class="img-fluid mx-auto d-block p" >
+                    </div>
+                </div>
+
+                <div class="col-3 col-md col-lg mb-5 badge-wrapper second_line_badges">
+                    <div class="badge">
+                        <img src="box-6.svg" class="img-fluid mx-auto d-block p" >
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="container-fluid pt-2 pt-md-4 pt-lg-3"
+                style="background-color: #E3DBD9;">
+                <div class="row">
+
+                    <div class="col-lg-12 text-center py-5">
+
+                        <h1 class="mb-4 display-2 fw-bolder">
+                            <strong>Ready to take IT</strong>
+                            <strong>to the next level?</strong>
+                        </h1>
+                        <p class="fs-4 mb-4">Explore all our features, free for 30 days.</p>
                         <div class="button-wrapper text-center container row my-4">
-                            <a href="https://www.atera.com" id="btn" class="btn col-md-4 offset-md-2 col-lg-3 offset-lg-5">Start free trial</a>
+                            <a
+                                href="https://www.atera.com"
+                                class="btn col-md-4 offset-md-2 col-lg-3 offset-lg-5">Start free trial</a>
                             <p class="fw-lighter d-block d-sm-none fs-5" style="color:#54575c">No credit card required</p>
-
-                            <a href="https://www.atera.com" id="btn" class="btn col-md-4 offset-md-1 col-lg-3">Book a demo</a> 
-                            <p class="fw-lighter text-center d-none d-sm-block fs-5 col-md-4 offset-md-2 col-lg-3 offset-lg-5 my-lg-2" style="color:#54575c">No credit card required</p>
-
-
+                            <a href="https://www.atera.com" class="btn col-md-4 offset-md-1 col-lg-3">Book a demo</a>
+                            <p
+                                class="fw-lighter text-center d-none d-sm-block fs-5 col-md-4 offset-md-2 col-lg-3 offset-lg-5 my-lg-2"
+                                style="color:#54575c">No credit card required</p>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-        </body>
-    </html>
+        </div>
+    </body>
+</html>
